@@ -3,10 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #2A4B7C; /* Cambia el color de fondo a gris claro */
+    /*background-image: url('imagen3.jpg'); style="float: right; width: 100px; height: 100px;"/* Cambia la imagen de fondo */
+    
   }
   
   h1, h2 {
-    color: #9476af;
+    color: #6E8B3D;
   }
   
   nav ul {
@@ -21,7 +24,7 @@ body {
   }
   
   a {
-    color: #6D5A4B;
+    color: #b0bca5;
     text-decoration: none;
   }
   
@@ -65,10 +68,11 @@ body {
   #services ul {
     list-style: disc;
     margin-left: 20px;
+    
   }
   
   footer {
-    background-color: #FFC768;
+    background-color: #6E8B3D;
     color: #fff;
     padding: 10px;
     text-align: center;
