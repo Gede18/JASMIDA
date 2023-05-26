@@ -1,80 +1,154 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #2A4B7C; /* Cambia el color de fondo a gris claro */
-    /*background-image: url('imagen3.jpg'); style="float: right; width: 100px; height: 100px;"/* Cambia la imagen de fondo */
-    
-  }
-  
-  h1, h2 {
-    color: #6E8B3D;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  a {
-    color: #b0bca5;
-    text-decoration: none;
-  }
-  
-  /* Estilos específicos de la página */
-  header {
-    background-color: #9F4E7C;
-    padding: 20px;
-    position: relative;
-    text-align: center;
-    background-image: url('Oficina_de_edificio_moderno_y_fondo_de_cielo_azul___Foto_Premium-transformed.jpeg');
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    text-align: center;
-  }
- 
-  .header-text {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 10px;
-  }
-  section {
-    padding: 20px;
-    
-  }
-  .image-container {
-    display: flex; /* Establece el contenedor como un flex container */
-    justify-content: space-between; /* Distribuye las imágenes con espaciado equitativo */
-  }
-  
-  .image-item {
-    width: 200px; /* Ancho de cada imagen */
-    height: 200px; /* Altura de cada imagen */
-    object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el espacio asignado */
-    margin-right: 20px; /* Espacio entre las imágenes */
-  }
-  
-  #video-container {
-    display: none;
-  }
-  
-  #services ul {
-    list-style: disc;
-    margin-left: 20px;
-    
-  }
-  
-  footer {
-    background-color: #6E8B3D;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2A4B7C; /* Cambia el color de fondo a gris claro */
+  /*background-image: url('imagen3.jpg'); style="float: right; width: 100px; height: 100px;"*/ /* Cambia la imagen de fondo */
+}
+
+h1, h2 {
+  color: #6E8B3D;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+a {
+  color: #b0bca5;
+  text-decoration: none;
+}
+
+/* Estilos específicos de la página */
+header {
+  background-color: #9F4E7C;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  background-image: url('Oficina_de_edificio_moderno_y_fondo_de_cielo_azul___Foto_Premium-transformed.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.header-text {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+}
+
+section {
+  padding: 20px;
+}
+
+.image-container {
+  display: flex; /* Establece el contenedor como un flex container */
+  justify-content: space-between; /* Distribuye las imágenes con espaciado equitativo */
+}
+
+.image-item {
+  width: 200px; /* Ancho de cada imagen */
+  height: 200px; /* Altura de cada imagen */
+  object-fit: cover; /* Ajusta el tamaño de la imagen para cubrir el espacio asignado */
+  margin-right: 20px; /* Espacio entre las imágenes */
+}
+
+#video-container {
+  display: none;
+}
+
+#services ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+footer {
+  background-color: #6E8B3D;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.carousel-prev {
+  left: 20px;
+}
+
+.carousel-next {
+  right: 20px;
+}
+
+
+/* Estilos CSS personalizados */
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos adicionales para los botones numéricos */
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.slick-dots li {
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  background: #ccc;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+  background: #000;
+}
+
