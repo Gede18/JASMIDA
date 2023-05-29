@@ -175,3 +175,37 @@ footer {
 .slick-dots li.slick-active button {
   background: #000;
 }
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.contact-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.contact-details {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.contact-details h3 {
+  color: #6E8B3D;
+  margin-bottom: 5px;
+}
+
+.contact-details p {
+  margin: 5px 0;
+}
